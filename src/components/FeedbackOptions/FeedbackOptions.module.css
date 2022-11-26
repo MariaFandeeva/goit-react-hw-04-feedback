@@ -1,0 +1,15 @@
+.btn {
+  height: 50px;
+  width: 150px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, red, violet, blue);
+  cursor: pointer;
+}
+.btn:hover {
+  scale: 105%;
+  transition: scale 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
