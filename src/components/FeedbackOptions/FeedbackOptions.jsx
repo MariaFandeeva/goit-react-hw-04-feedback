@@ -2,16 +2,15 @@ import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({ options, onAddFeedback }) => {
-  const stateArray = Object.keys(options);
   return (
     <div>
-      {stateArray.map(option => (
+      {options.map(option => (
         <button
           className={css.btn}
           type="button"
           key={option}
           name={option}
-          onClick={() => onAddFeedback(option)}
+          onClick={onAddFeedback}
         >
           {option}
         </button>
